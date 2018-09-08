@@ -1,5 +1,13 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
+<head>
+    <title>登录</title>
+</head>
 <body>
-<h2>Hello World!</h2>
+<form method="get" action="user/getUser">
+    <input type="text" name="name">
+    <input type="text" name="cardId">
+    <input type="button" value="提交">
+</form>
 </body>
 </html>

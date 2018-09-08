@@ -7,5 +7,10 @@ import com.zhang.model.User;
  */
 public interface UserDao {
 
-    User selectUser();
+    /**
+     * data by name
+     * @param name
+     * @return User
+     */
+    User selectUser(String name);
 }

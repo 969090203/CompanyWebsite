@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- 设置为IUserDao接口方法提供sql语句配置 -->
-<mapper namespace="com.zhang.dao.IUserDao">
+<!-- 设置为UserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.zhang.dao.UserDao">
     <resultMap id="selectUser" type="User">
         <result property="cardId" column="card_id"/>
         <result property="entryData" column="entry_data"/>
         <result property="jobNumber" column="job_number"/>
     </resultMap>
 
-    <select id="getUser" resultMap="selectUser" parameterType="String">
+    <select id="selectUser" resultMap="selectUser" parameterType="String">
         SELECT * FROM user WHERE name = #{name}
     </select>
 

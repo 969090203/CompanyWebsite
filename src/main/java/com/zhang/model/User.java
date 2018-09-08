@@ -8,8 +8,8 @@ public class User {
     private String name;
     private String cardId;
     private String phone;
-    private String brithday;
-    private String entryDatal;
+    private String birthday;
+    private String entryData;
     private boolean status;
     private String jobNumber;
     private String dept;
@@ -47,20 +47,20 @@ public class User {
         this.phone = phone;
     }
 
-    public String getBrithday() {
-        return brithday;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setBrithday(String brithday) {
-        this.brithday = brithday;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
-    public String getEntryDatal() {
-        return entryDatal;
+    public String getEntryData() {
+        return entryData;
     }
 
-    public void setEntryDatal(String entryDatal) {
-        this.entryDatal = entryDatal;
+    public void setEntryData(String entryData) {
+        this.entryData = entryData;
     }
 
     public boolean isStatus() {
@@ -93,5 +93,10 @@ public class User {
 
     public void setPosition(String position) {
         this.position = position;
+    }
+
+    public User(String name, String cardId) {
+        this.name = name;
+        this.cardId = cardId;
     }
 }

@@ -28,8 +28,8 @@
     </bean>
 
     <!-- 访问静态文件（jpg,js,css）的方法 -->
-    <mvc:resources location="/files/" mapping="/files/**" />
-    <mvc:resources location="/scripts/" mapping="/scripts/**" />
-    <mvc:resources location="/styles/" mapping="/styles/**" />
-    <mvc:resources location="/views/" mapping="/views/**" />
+    <!--<mvc:resources location="/files/" mapping="/files/**" />-->
+    <!--<mvc:resources location="/scripts/" mapping="/scripts/**" />-->
+    <!--<mvc:resources location="/styles/" mapping="/styles/**" />-->
+    <!--<mvc:resources location="/views/" mapping="/views/**" />-->
 </beans>

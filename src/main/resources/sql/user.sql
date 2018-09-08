@@ -14,6 +14,31 @@ SET FOREIGN_KEY_CHECKS=1;
 
 DELETE from user where id="1";
 
-SELECT * FROM user WHERE id ="1";
+SELECT * FROM user WHERE name ="张芮源";
 
 DROP TABLE user;
+
+CREATE TABLE user
+(
+  id         INT AUTO_INCREMENT
+  COMMENT '用户ID'
+    PRIMARY KEY,
+  name       VARCHAR(255) NOT NULL
+  COMMENT '姓名',
+  card_id    VARCHAR(255) NOT NULL
+  COMMENT '身份证号码',
+  phone      VARCHAR(255) NULL
+  COMMENT '电话号码',
+  birthday   VARCHAR(255) NOT NULL
+  COMMENT '出生日期',
+  entry_data VARCHAR(255) NOT NULL
+  COMMENT '入职时间',
+  status     TINYINT(1)   NOT NULL
+  COMMENT '是否在职',
+  job_number VARCHAR(20)  NOT NULL
+  COMMENT '工号',
+  dept       VARCHAR(255) NOT NULL
+  COMMENT '部门',
+  position   VARCHAR(255) NOT NULL
+  COMMENT '职务'
+)
