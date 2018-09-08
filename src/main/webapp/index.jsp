@@ -7,7 +7,7 @@
 <form method="get" action="user/getUser">
     <input type="text" name="name">
     <input type="text" name="cardId">
-    <input type="button" value="提交">
+    <input type="submit" value="提交">
 </form>
 </body>
 </html>

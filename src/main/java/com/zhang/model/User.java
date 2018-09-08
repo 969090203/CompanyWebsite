@@ -15,6 +15,10 @@ public class User {
     private String dept;
     private String position;
 
+    public User(){
+
+    }
+
     public int getId() {
         return id;
     }
