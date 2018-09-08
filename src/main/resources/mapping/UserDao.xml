@@ -3,9 +3,14 @@
 
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="com.zhang.dao.IUserDao">
+    <resultMap id="selectUser" type="User">
+        <result property="cardId" column="card_id"/>
+        <result property="entryData" column="entry_data"/>
+        <result property="jobNumber" column="job_number"/>
+    </resultMap>
 
-    <select id="selectUser" resultType="User" parameterType="int">
-        SELECT * FROM user WHERE id = #{id}
+    <select id="getUser" resultMap="selectUser" parameterType="String">
+        SELECT * FROM user WHERE name = #{name}
     </select>
 
 </mapper>

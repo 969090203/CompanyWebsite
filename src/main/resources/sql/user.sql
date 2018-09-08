@@ -1,16 +1,15 @@
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
-  `email` varchar(255) NOT NULL COMMENT '用户邮箱',
-  `password` varchar(255) NOT NULL COMMENT '用户密码',
-  `username` varchar(255) NOT NULL COMMENT '用户昵称',
-  `role` varchar(255) NOT NULL COMMENT '用户身份',
-  `status` int(1) NOT NULL COMMENT '用户状态',
-  `regTime` datetime NOT NULL COMMENT '注册时间',
-  `regIp` varchar(255) NOT NULL COMMENT '注册IP',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `email` (`email`) USING BTREE
+  `name` varchar(255) NOT NULL COMMENT '姓名',
+  `card_id` varchar(255) NOT NULL COMMENT '身份证号码',
+  `phone` varchar(255) COMMENT '电话号码',
+  `brithday` varchar(255) NOT NULL COMMENT '出生日期',
+  `entry_data` varchar(255) NOT NULL COMMENT '入职时间',
+  `status` int(1) NOT NULL COMMENT '是否在职',
+  `job_number`VARCHAR(20) NOT NULL COMMENT '工号',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-INSERT INTO `user` VALUES (1, '969090203@qq.com', '544645', '山东黄金', 'root', '0', '2017-03-28 09:40:31', '0');
+INSERT INTO `user` VALUES (1, '张芮源', '612723199012205636', '15291278581', '1990-12-20', '2018-04-04', '0', 'B0000001');
 SET FOREIGN_KEY_CHECKS=1;
 
 DELETE from user where id="1";
